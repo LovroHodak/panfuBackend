@@ -20,6 +20,10 @@ router.get("/about", (req, res) => {
 
 
 router.post("/addAbout", (req, res) => {
+  if(req.body.password !== process.env.GESLO){
+    res.status(401).json({message: 'wrong password'})
+    return
+  }
   const { text } = req.body;
   //console.log(req.body);
 

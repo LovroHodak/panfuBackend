@@ -41,6 +41,11 @@ router.get("/songs", async (req, res) => {
 
 router.post("/addSong", async (req, res) => {
   try {
+    if(req.body.password !== process.env.GESLO){
+      res.status(401).json({message: 'wrong password'})
+      return
+    }
+    
     const bucket = await getBucket();
     const newId = mongoose.Types.ObjectId();
     console.log(req.files);

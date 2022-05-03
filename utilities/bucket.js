@@ -9,3 +9,6 @@ module.exports = async function getBucket() {
   const bucket = new mongodb.GridFSBucket(db, { bucketName: "slikePanfu" });
   return bucket;
 };
+
+// namest JSON shranjuje file
+// file upload v bazo, isces po npr id ali meta

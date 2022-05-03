@@ -1,3 +1,11 @@
+1. INDEX.js
+-MULTIPART !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+
+
 1. npm init
 2. git init
 3. npm i express mongoose dotenv nodemon cors body-parser

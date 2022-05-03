@@ -44,7 +44,7 @@ const songsRoutes = require('./routes/songs.routes')
 app.use('/api', songsRoutes)
 
 const photosRoutes = require('./routes/photos.routes');
-const req = require("express/lib/request");
+//const req = require("express/lib/request");
 app.use('/api', photosRoutes)
 
 const PORT = process.env.PORT;
