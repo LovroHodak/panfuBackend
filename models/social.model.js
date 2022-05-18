@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+/* const mongoose = require("mongoose");
 
 const socialSchema = mongoose.Schema({
     link: {
@@ -14,4 +14,4 @@ const socialSchema = mongoose.Schema({
 
 const Social = mongoose.model("social", socialSchema)
 
-module.exports = Social;
+module.exports = Social; */

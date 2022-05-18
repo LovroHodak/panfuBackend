@@ -1,3 +1,5 @@
+BE is writen in Node where I first set up an Express server. Than i use library connect-multiparty that works with different data types. With Bucket I connect to mongoDB.
+
 1. INDEX.js
 -MULTIPART !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

@@ -50,8 +50,8 @@ router.post("/addSong", async (req, res) => {
     const newId = mongoose.Types.ObjectId();
     console.log(req.files);
     const { image } = req.files;
-    console.log(image)
-    console.log(image.path)
+    //console.log(image)
+    //console.log(image.path)
     await promisifiedPipeline(
       fs.createReadStream(image.path),
       bucket.openUploadStream(image.name, {
@@ -65,7 +65,7 @@ router.post("/addSong", async (req, res) => {
 
     /* const title = req.body.title
     const videoUrl = req.body.videoUrl */
-    console.log(req.body);
+    //console.log(req.body);
     const { title, videoUrl } = req.body;
 
 

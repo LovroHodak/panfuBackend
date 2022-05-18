@@ -16,7 +16,6 @@ router.get("/social", (req, res) => {
   Social.find()
     .then((social) => {
       res.status(200).json(social);
-      console.log(social);
     })
     .catch((error) => {
       console.error(error);
@@ -30,7 +29,6 @@ router.post("/addSocial", async (req, res) => {
   try {
     const bucket = await getBucket();
     const newId = mongoose.Types.ObjectId();
-    console.log(req.files);
     await promisifiedPipeline(
       fs.createReadStream(req.files.image.path),
       bucket.openUploadStream(req.files.image.name, {

@@ -21,10 +21,10 @@ router.post("/addPhoto", async (req, res) => {
         res.status(401).json({message: 'wrong password'})
         return
       }
-      
+
       const bucket = await getBucket();
       const newId = mongoose.Types.ObjectId();
-      console.log(req.files);
+      //console.log(req.files);
       // vse za req.files.image. mi ustvari multipart (path, name, type)
       await promisifiedPipeline(
         // multipart mi sharni foto na disk
@@ -59,7 +59,7 @@ router.post("/addPhoto", async (req, res) => {
     Photo.find()
       .then((photo) => {
         res.status(200).json(photo);
-        console.log(photo);
+        //console.log(photo);
       })
       .catch((error) => {
         console.error(error);

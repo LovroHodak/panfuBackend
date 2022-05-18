@@ -21,7 +21,7 @@ router.get("/images/:id", async (req, res) => {
   );
 
 
-  console.log(item);
+  //console.log(item);
 });
 
 module.exports = router;

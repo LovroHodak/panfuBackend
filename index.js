@@ -27,12 +27,12 @@ app.use(bodyParser.json()); //crucial for post requests from client
 app.use(multipart())
 
 app.use((req, res, next) => {
-  console.log(req.path, req.method)
+  //console.log(req.path, req.method)
   next()
 })
 
-const socialRoutes = require('./routes/social.routes')
-app.use('/api', socialRoutes)
+/* const socialRoutes = require('./routes/social.routes')
+app.use('/api', socialRoutes) */
 
 const aboutRoutes = require('./routes/about.routes')
 app.use('/api', aboutRoutes)

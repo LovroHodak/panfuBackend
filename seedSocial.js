@@ -1,4 +1,4 @@
-const Social = require('./models/social.model')
+/* const Social = require('./models/social.model')
 require('./config/db.config')
 
 Social.insertMany([
@@ -26,4 +26,4 @@ Social.insertMany([
   })
   .catch((err) => {
     console.log("Problems with adding Social: ", err);
-  });
+  }); */
